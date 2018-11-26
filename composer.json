@@ -1,0 +1,15 @@
+{
+    "name": "citco/keyword-stuffing",
+    "description": "This class helps to detect and remove keyword stuffing from a text.",
+    "keywords": ["keyword","stuffing"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Citco\\": "src/"
+        },
+        "files": ["src/stats_standard_deviation.php"]
+    }
+}
