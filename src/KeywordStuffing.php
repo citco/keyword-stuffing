@@ -416,9 +416,14 @@ class KeywordStuffing {
 
 		$replacement = $this->generateReplacement($pattern);
 
-		$text = preg_replace($pattern, $replacement, $text);
-
-		return $text;
+		try
+		{
+			$text = preg_replace($pattern, $replacement, $text);
+		}
+		finally
+		{
+			return $text;
+		}
 	}
 
 	private function removeEmptyLines($text)
